@@ -1,0 +1,208 @@
+@model PostModel
+@{
+    var postUrl = Context.Request.Path; // Url bilgisini alır
+}
+<div id="@Model.Id" class="card border-dark" style="width: 100%;">
+    <div class="card-header bg-transparent border-dark">
+        <div class="row">
+            @if(TempData["PostId"] != null && TempData["PostId"].ToString() == Model.Id.ToString())
+            {
+                <div class="col-12">
+                    <div class="alert alert-danger text-center p-1 role="alert">
+                        @TempData["MessageComplaint"];
+                    </div>
+                </div>
+            }
+            <div class="col-2">
+                <a asp-controller="User" asp-action="Profile" asp-route-userId="@Model.UserId">
+                    <img src="~/userImages/@(Model.UserName).jpeg" alt="" class="border border-dark rounded-circle" width="50px" height="50px">
+                </a>
+            </div>
+            <div class="col-8">
+                <div>
+                    <bold><a asp-controller="User" asp-action="Profile" asp-route-userId="@Model.UserId" class="text-decoration-none text-dark">@Model.UserName</a></bold> 
+                    @if(Model.IsApproved==true)
+                    {
+                        <span><img src="~/icons/mavi-tik1.png" alt="" width="20px" class="rounded-circle"></span>
+                    }
+                    
+                </div>
+                <div>
+                    <small>@Model.CreatedAt</small>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="dropdown">
+                    <button class="btn btn-outline-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-ellipsis-vertical fa-lg"></i>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li class="p-0 m-0 d-flex justify-content-center">
+                            <form asp-controller="User" asp-action="Complaint" method="post">
+                                <input type="hidden" name="postId" value="@Model.Id">
+                                <button id="complaintButton" class="btn btn-outline-dark m-0 px-4">Şikayet et</button>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card-body text-dark p-0 m-0">
+        <div style="overflow: hidden; width: 100%;  max-height: 450px;">
+            <img src="~/postImages/@Model.ImageUrl" alt=""
+                style="height: 100%; width: 100%; object-fit: cover;">
+        </div>
+        @if(@Model.Content!=null)
+        {
+            <div class="p-2 m-0 truncate-text" style="background-color: #faefda;">
+                <p class="m-0">@Model.Content</p>
+            </div>
+        }
+    </div>
+    <div class="card-footer bg-transparent border-dark d-flex">
+        <div class="d-inline me-4">
+            <div class="d-flex">
+                <div class="d-inline" style="height: 30px;">
+                    <form asp-controller="Home" asp-action="Like" method="post" class="text-decoration-none text-dark">
+                        <input type="hidden" name="postId" value="@Model.Id">
+                        <input type="hidden" name="postUrl" value="@postUrl">
+                        <button class="border-0" style="background-color: transparent;">
+                            @if(Model.IsLike==true)
+                            {
+                                <i class="fa-solid fa-heart" style="color: #d50707;"></i>
+                            }else{
+                                <i class="fa-regular fa-heart"></i>
+                            }
+                            
+                        </button>
+                    </form>
+                </div>
+                @* <div>
+                    <form asp-controller="Home" asp-action="Likes" method="post" class="text-decoration-none text-dark">
+                        <input type="hidden" name=postId value="@Model.Id">
+                        <button type="button" class="border-0" data-bs-toggle="modal" data-bs-target="#exampleModal" style="background-color: transparent;">
+                            @Model.LikesCount
+                        </button>
+                    </form>
+                </div>
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <partial name="_LikesMoldal"></partial>
+                </div> *@
+                <a asp-controller="Home" asp-action="Likes" asp-route-postId="@Model.Id" class="text-decoration-none text-dark"><span class="ms-2">@Model.LikesCount</span></a>
+            </div>
+        </div>
+        @if(Model.IsCommentOpen==false)
+        {
+            <div class="d-inline me-4">
+                <div>
+                    <a asp-controller="Home" asp-action="Comments" asp-route-postId="@Model.Id" class="text-decoration-none text-dark">
+                        <i class="fa-regular fa-comment"></i><span class="ms-2">@Model.CommentsCount</span>
+                    </a>
+                </div>
+            </div>
+        }
+        <div class="d-inline me-4">
+            <div>
+                <form asp-controller="Home" asp-action="SaveProccess" method="post" class="text-decoration-none text-dark">
+                    <input type="hidden" name="postId" value="@Model.Id">
+                    <input type="hidden" name="postUrl" value="@postUrl">
+                    <button class="border-0" style="background-color: transparent;">
+                        @if(Model.IsSave==true)
+                        {
+                            <i class="fa-solid fa-bookmark"></i>
+                        }else{
+                            <i class="fa-regular fa-bookmark"></i>
+                        }
+                        
+                    </button>
+                </form>
+                @* <a href="/" class="text-decoration-none text-dark">
+                    <i class="fa-regular fa-bookmark"></i><span class="ms-2">Kaydet</span>
+                </a> *@
+            </div>
+        </div>
+        <div class="d-inline me-4">
+            <div>
+                @* <a href="#" asp class="text-decoration-none text-dark">
+                    <i class="fa-solid fa-share"></i>
+                </a> *@
+                <button type="button" class="border-0" style="background: transparent;" data-bs-toggle="modal" data-bs-target="#exampleModal_@(Model.Id)">
+                    <i class="fa-solid fa-share"></i>
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal_@(Model.Id)" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Paylaş</h1>
+                                <button type="button" style="background-color: transparent;" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body d-flex justify-content-center align-items-center" style="min-height: 100px;">
+                                <div class="d-inline mx-5">
+                                    <a href="https://www.instagram.com/" target="_blank" class="" >
+                                        <i class="fa-brands fa-instagram fa-bounce fa-2xl" style="color: #d30d63;"></i>
+                                    </a>
+                                </div>
+                                <div class="d-inline mx-5">
+                                    <a href="https://www.facebook.com/" target="_blank" class="" >
+                                        <i class="fa-brands fa-facebook-f fa-bounce fa-2xl" style="color: #075ced;"></i>
+                                    </a>
+                                </div>
+                                <div class="d-inline mx-5">
+                                    <a href="https://web.whatsapp.com/" target="_blank" class="">
+                                        <i class="fa-brands fa-whatsapp fa-bounce fa-2xl" style="color: #04c324;"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <h4>PostPal</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-inline me-4">
+            <div>
+                @* <a href="~/postImages/@Model.ImageUrl" class="text-decoration-none text-dark" target="_blank">
+                    <i class="fa-solid fa-image"></i><span class="ms-2">Resmin Orjinali</span>
+                </a> *@
+                <button type="button" class="btn btn-dark border-0 bg-white text-dark p-0 m-0" data-bs-toggle="modal" data-bs-target="#model_@Model.Id">
+                <i class="fa-solid fa-image"></i><span class="ms-2">Resmin Orjinali</span>
+                </button>
+
+                <div class="modal fade" id="model_@Model.Id" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Resmin Orjinali</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="~/postImages/@Model.ImageUrl" alt="" class="img-fluid"
+                                style="height: 100%; width: 100%; object-fit: cover;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div>
+        @if(Model.IsCommentOpen==false)
+        {
+            <form asp-controller="Home" asp-action="Comment" method="post" class="d-block">
+                <input type="hidden" name="postId" value="@Model.Id">
+                <input type="hidden" name="postUrl" value="@postUrl">
+                <div class="input-group mx-1 mb-1 w-100 pe-2">
+                    <textarea class="form-control" placeholder="Yorum yap..." id="floatingTextarea" name="comment" style="max-height:350px; min-height:50px;" maxlength="300"></textarea>
+                    <button class="btn btn-outline-dark">Gönder</button>
+                </div>
+            </form>
+        }
+        
+    </div>
+</div>

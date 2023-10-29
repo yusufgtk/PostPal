@@ -1,0 +1,61 @@
+
+@{
+    ViewData["Title"] ="Mavi Tik Başvurusu";
+}
+
+<div class="my-5">
+    <div class="row">
+        <div class="col-12 d-flex justify-content-center">
+            @if(ViewBag.isBlueTickApplication==0)
+            {
+                <div class="row">
+                    <div class="col-12 d-flex justify-content-center">
+                        <div class="alert alert-warning" role="alert">
+                            Başvuru durumunu burdan takip edebilirsin.
+                        </div>
+                    </div>
+                    <div class="col-12 d-flex justify-content-center">
+                        <div class="card text-bg-dark mb-3" style="max-width: 30rem; width: 25rem; min-width: 20rem;">
+                            <div class="card-header text-center">Mavi Tik Başvurusu</div>
+                            <div class="card-body">
+                                <form asp-controller="User" asp-action="BlueTick" method="post">
+                                    <div class="mb-3">
+                                        <label for="description" class="form-label">Açıklama</label>
+                                        <textarea class="form-control" name="description" required minlength="25" maxlength="500" style="height: 300px;"></textarea>
+                                    </div>
+                                    <div class="float-end">
+                                        <button class="btn btn-outline-dark" type="submit">Başvur</button>
+                                    </div>
+                                    <a asp-controller="User" asp-action="Settings" class="btn btn-outline-warning" type="submit"><i class="fa-solid fa-chevron-left me-2"></i><span>Geri</span></a>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+            }
+            else if(ViewBag.isBlueTickApplication==1)
+            {
+                <div class="alert alert-success" role="alert"  style="max-width: 30rem; width: 25rem; min-width: 20rem;">
+                    <h4 class="alert-heading"><span class="me-2">Başvurun Yapıldı!</span><i class="fa-solid fa-rotate-right fa-spin fa-lg"></i></h4>
+                    <p>Başvurunun onaylanması bekleniyor...</p>
+                    <p>PostPal onaylaması gerekiyor.</p>
+                    <hr>
+                    <p class="mb-0">PostPal</p>
+                </div>
+            }
+            else
+            {
+                <div class="alert alert-success" role="alert"  style="max-width: 30rem; width: 25rem; min-width: 20rem;">
+                    <h4 class="alert-heading"><span class="me-2">Hesabın Onaylı!</span><i class="fa-solid fa-check fa-bounce fa-lg"></i></h4>
+                    <p>Mavi tik'in zaten var.</p>
+                    <p>PostPal tarafından verildi.</p>
+                    <hr>
+                    <p class="mb-0">PostPal</p>
+                </div>
+            }
+            
+        </div>
+    </div>
+</div>

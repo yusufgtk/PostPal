@@ -1,0 +1,84 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/"><div>
+            <img src="~/icons/logo-white.jpeg" alt="" style="width: 140px; height: 40px;">
+        </div></a>
+        <button class="navbar-toggler text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars fa-lg"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item me-2">
+                    <a href="/" class="nav-link text-dark" aria-current="page">
+                        <i class="fa-solid fa-house-chimney fa-xl"></i>
+                        <span class="ms-2">Anasayfa</span>
+                    </a>
+                </li>
+                <li class="nav-item me-2">
+                    <a asp-controller="Home" asp-action="Discover" class="nav-link link-body-emphasis text-dark">
+                        <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+                        <span class="ms-2">Ara</span>
+                    </a>
+                </li>
+                <li class="nav-item me-2">
+                    <a asp-controller="Home" asp-action="Discover" class="nav-link link-body-emphasis text-dark">
+                        <i class="fa-regular fa-compass fa-xl"></i>
+                        <span class="ms-2">Keşfet</span>
+                    </a>
+                </li>
+                <li class="nav-item me-2">
+                    <a asp-controller="Home" asp-action="Notifications" class="nav-link link-body-emphasis text-dark">
+                        <i class="fa-regular fa-bell fa-xl"></i>
+                        <span class="ms-2">Bildirimler</span>
+                    </a>
+                </li>
+                <li class="nav-item me-2">
+                    <a asp-controller="User" asp-action="ChatList" class="nav-link link-body-emphasis text-dark">
+                        <i class="fa-regular fa-comments fa-xl"></i>
+                        <span class="ms-2">Mesajlar</span>
+                    </a>
+                </li>
+                <li class="nav-item me-2">
+                    <a asp-controller="User" asp-action="AddPost" class="nav-link link-body-emphasis text-dark">
+                        <i class="fa-regular fa-square-plus fa-xl"></i>
+                        <span class="ms-2">Oluştur</span>
+                    </a>
+                </li>
+                <li class="nav-item me-2">
+                    <a asp-controller="User" asp-action="Saves" class="nav-link link-body-emphasis text-dark">
+                        <i class="fa-regular fa-bookmark fa-xl"></i>
+                        <span class="ms-2">Kaydedilenler</span>
+                    </a>
+                </li>
+                <li class="nav-item me-2">
+                    @if(User.Identity.IsAuthenticated)
+                    {
+                        <a asp-controller="User" asp-action="IProfile" class="nav-link link-body-emphasis text-dark">
+                            <img src="~/userImages/@(User.Identity.Name).jpeg" alt="" width="45px" height="45px" class="border border-dark rounded-circle">
+                            <span class="ms-2">@(User.Identity.Name)</span>
+                        </a>
+                    }
+                    else
+                    {
+                        <a href="#" class="nav-link link-body-emphasis text-dark">
+                            <i class="fa-regular fa-user fa-xl"></i>
+                            <span class="ms-2">Profil</span>
+                        </a>
+                    }
+                </li>
+                <li>
+                    <a asp-controller="Home" asp-action="Feedback" class="nav-link link-body-emphasis text-dark">
+                        <i class="fa-solid fa-hand-holding-medical fa-xl"></i>
+                        <span class="ms-3">Geri Bildirim</span>
+                    </a>
+                </li>
+                <li class="nav-item me-2">
+                    <a asp-controller="Account" asp-action="Logout" class="nav-link link-body-emphasis text-dark">
+                        <i class="fa-solid fa-right-from-bracket fa-xl"></i>
+                        <span class="ms-3">Çıkış Yap</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

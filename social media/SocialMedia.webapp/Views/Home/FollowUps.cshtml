@@ -1,0 +1,60 @@
+@model List<UserModel>
+@{
+    ViewData["Title"] ="Takip Ettikleri";
+}
+
+<div class="my-5">
+    <div class="mb-5">
+        <h1 class="text-center text-dark">Takip Ettikleri</h1>
+    </div>
+    <div>
+        <div class="row">
+            <div class=" col-12 mb-3 d-flex justify-content-center">
+                <div class="w-75">
+                    <form asp-controller="Home" asp-action="FollowUps" method="post">
+                        <input type="hidden" name="userId" value="@ViewBag.UserId" class="">
+                        <div>
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="search">
+                            <button class="btn btn-outline-dark"><i class="fa-solid fa-magnifying-glass fa-lg"></i></button>
+                        </div>
+                        
+                    </form>
+                </div>
+            </div> 
+            <div class="col-12 d-flex justify-content-center">
+                    <ul class="list-group p-2 p-lg-5 p-xl-5 border border-2 border-dark w-75 w-lg-50 w-xl-50 shadow-lg bg-dark">
+                    @if(Model.Count()>0)
+                    {
+                        @foreach(var user in Model)
+                        {
+                            <li class="list-group-item border border-2 border-dark">
+                                <a asp-controller="User" asp-action="Profile" asp-route-userId="@user.Id" class="text-decoration-none text-dark">
+                                    <div class="d-flex">
+                                        <div class="d-inline me-2">
+                                            <img src="~/userImages/@(user.UserName).jpeg" alt="" width="50px" height="50px" class="rounded-circle">
+                                        </div>
+                                        <div class="d-inlne pt-2">
+                                            <span class="me-1">@user.UserName</span>
+                                            @if(user.IsApproved==true)
+                                            {
+                                                <span><img src="~/icons/mavi-tik1.png" alt="" width="20px" class="rounded-circle"></span>
+                                            }
+                                        </div>
+                                    </div>
+                                    
+                                </a>
+                            </li>
+                        }
+                    }else{
+
+                        <li>
+                            <div class="alert alert-dark" role="alert">
+                                Kimseyi Takip Etmiyor
+                            </div>
+                        </li>
+                    }
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

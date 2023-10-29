@@ -1,0 +1,52 @@
+@model LoginModel
+
+@{
+    ViewData["Title"] = "Giriş Yap";
+    var Alert = TempData["Alert"];
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+
+<div class="my-5">
+    @if(TempData["Message"] != null)
+    {
+        <div class="alert @Alert mb-3" role="alert">
+            @TempData["Message"]
+        </div>
+    }
+    <div class="row">
+        <div class="col-12 d-flex justify-content-center">
+            <h1 class="text-center text-dark mb-5">Social Media</h1>
+        </div>
+        <div class="col-12 d-flex justify-content-center">
+            <div class="card text-bg-dark mb-3" style="max-width: 30rem; width: 25rem;">
+                <div class="card-header text-center">Giriş Yap</div>
+                <div class="card-body">
+                    <form asp-controller="Account" asp-action="Login" method="post" enctype="multipart/form-data">
+                        <div class="mb-3">
+                            <label asp-for="UserName" class="form-label">Kullanıcı Adı</label>
+                            <input class="form-control" asp-for="UserName">
+                            <span asp-validation-for="UserName" class="text-warning"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label asp-for="Password" class="form-label">Şifre</label>
+                            <input class="form-control" asp-for="Password">
+                            <span asp-validation-for="Password" class="text-warning"></span>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <button class="btn btn-outline-dark" type="submit">Giriş</button>
+                            </div>
+                            <div>
+                                <a asp-controller="Account" asp-action="ForgotPassword" class="btn btn-outline-danger" type="submit">Şifre mi unuttum?</a>
+                            </div>
+                            <div>
+                                <a asp-controller="Account" asp-action="Register" class="btn btn-outline-dark" type="submit">Kayıt Ol</a>
+                            </div>
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,104 @@
+@model List<ComplaintModel>
+
+@{
+    Layout="_Layout3";
+    ViewData["title"]="Şikayetler";
+}
+
+<div class="my-5">
+    <div class="mb-5">
+        <h2 class="h2 text-center text-dark">Şikayetler</h2>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            @if(TempData["Message"]!=null)
+            {
+                <div class="alert alert-danger" role="alert">
+                    @TempData["Message"]
+                </div>
+            }
+        </div>
+        <div class="col-12 mb-5">
+            <form asp-controller="Admin" asp-action="Search" method="post" class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Şikayet (post id) ara..." aria-label="Search" name="search" class="border border-2 boder-dark">
+                <button class="btn btn-outline-danger" type="submit"><i class="fa-solid fa-magnifying-glass fa-lg"></i></button>
+            </form>
+        </div>
+        @if(Model.Count>0)
+        {
+            <div class="col-12">
+                <table class="table table-danger table-striped border border-1 border-dark">
+                    <thead>
+                        <tr>
+                            <th scope="col"
+                            style="width: 70px;">Post Resmi</th>
+                            <th scope="col" style="width: 200px;">Post Id</th>
+                            <th scope="col" style="width: 200px;">Açıklama</th>
+                            <th scope="col" style="width: 200px;">Şikayet Sayısı</th>
+                            <th scope="col"style="width: 50px;">Postu Kaldır</th>
+                            <th scope="col"style="width: 50px;">Sorun Yok</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach(var item in Model)
+                        {
+                            <tr>
+                                <th scope="row">
+                                    
+                                    <button type="button" class="p-0 shadow-lg" data-bs-toggle="modal" data-bs-target="#model_@(item.PostId)">
+                                        <img src="~/postImages/@item.ImageUrl" alt="" width="100%" class="border border-1 border-dark" >
+                                    </button>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="model_@(item.PostId)" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Resim Detayı</h1>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <img src="~/postImages/@item.ImageUrl" alt="" width="100%" class="border border-1 border-dark" >
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </th>
+                                <td>
+                                    <span class="ms-2">@item.PostId</span>
+                                </td>
+                                <td>
+                                    <span class="ms-2">@item.Content</span>
+                                </td>
+                                <td>
+                                    <span class="ms-2">@item.NumberOfUser</span>
+                                </td>
+                                <td>
+                                    <form asp-controller="Admin" asp-action="RemovePost" method="post">
+                                        <input type="hidden" name="postId" value="@item.PostId">
+                                        <button class="btn btn-danger">Kaldır</button>
+                                    </form>
+                                </td>
+                                <td>
+                                    <form asp-controller="Admin" asp-action="Ignore" method="post">
+                                        <input type="hidden" name="postId" value="@item.PostId">
+                                        <button class="btn btn-success">Sorun Yok</button>
+                                    </form>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        }else{
+            <div class="col-12 d-flex justify-content-center">
+                <div class="alert alert-danger" role="alert">
+                    Şuan da şikayet bulunmamaktadır.
+                </div>
+            </div>
+        }
+    </div>
+</div>

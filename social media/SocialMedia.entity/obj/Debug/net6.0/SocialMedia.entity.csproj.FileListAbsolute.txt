@@ -1,0 +1,11 @@
+C:\Users\yusuf\OneDrive\Masaüstü\social media\SocialMedia.entity\bin\Debug\net6.0\SocialMedia.entity.deps.json
+C:\Users\yusuf\OneDrive\Masaüstü\social media\SocialMedia.entity\bin\Debug\net6.0\SocialMedia.entity.dll
+C:\Users\yusuf\OneDrive\Masaüstü\social media\SocialMedia.entity\bin\Debug\net6.0\SocialMedia.entity.pdb
+C:\Users\yusuf\OneDrive\Masaüstü\social media\SocialMedia.entity\obj\Debug\net6.0\SocialMedia.entity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\yusuf\OneDrive\Masaüstü\social media\SocialMedia.entity\obj\Debug\net6.0\SocialMedia.entity.AssemblyInfoInputs.cache
+C:\Users\yusuf\OneDrive\Masaüstü\social media\SocialMedia.entity\obj\Debug\net6.0\SocialMedia.entity.AssemblyInfo.cs
+C:\Users\yusuf\OneDrive\Masaüstü\social media\SocialMedia.entity\obj\Debug\net6.0\SocialMedia.entity.csproj.CoreCompileInputs.cache
+C:\Users\yusuf\OneDrive\Masaüstü\social media\SocialMedia.entity\obj\Debug\net6.0\SocialMedia.entity.dll
+C:\Users\yusuf\OneDrive\Masaüstü\social media\SocialMedia.entity\obj\Debug\net6.0\refint\SocialMedia.entity.dll
+C:\Users\yusuf\OneDrive\Masaüstü\social media\SocialMedia.entity\obj\Debug\net6.0\SocialMedia.entity.pdb
+C:\Users\yusuf\OneDrive\Masaüstü\social media\SocialMedia.entity\obj\Debug\net6.0\ref\SocialMedia.entity.dll

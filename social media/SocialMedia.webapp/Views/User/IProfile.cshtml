@@ -1,0 +1,79 @@
+@model UserModel
+
+@{
+    ViewData["Title"]="Benim Profil";
+}
+
+<div class="my-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-4 col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4 d-flex justify-content-end">
+                <div>
+                    <img src="~/userImages/@(Model.UserName).jpeg" alt="" style="width: 150px; height: 150px;" class="rounded-circle">
+                </div>
+            </div>
+            <div class="col-8 col-xl-8 col-lg-8 col-md-8 col-sm-8 col-xs-8 d-flex justify-content-start">
+                
+                <div class="row">
+                    <div class="col-12 d-flex mb-3">
+                        <div class="d-inline">
+                            <span class="me-1"><strong>@Model.UserName</strong></span>
+                            @if(Model.IsApproved==true)
+                            {
+                                <div class="p-0 m-0 d-inline"><img src="~/icons/mavi-tik1.png" class="rounded-circle" width="30px" style="background-color: transparent;"></div>
+                            }
+                        </div>
+                        <div class="d-inline ms-3">
+                            <a asp-controller="User" asp-action="Settings" class="btn btn-outline-dark">Profili Düzenle</a>
+                        </div>
+                    </div>
+                    <div class="col-12 mb-3">
+                        <div class="row">
+                            <div class="col-4 p-0 m-0"><span class="fw-bolder">@Model.Posts Gönderi</span></div>
+                            <div class="col-4"><a class="text-decoration-none text-dark fw-bolder" asp-controller="Home" asp-action="Followers" asp-route-userId="@Model.Id">@Model.Followers Takipçi</a></div>
+                            <div class="col-4"><a class="text-decoration-none text-dark fw-bolder" asp-controller="Home" asp-action="FollowUps" asp-route-userId="@Model.Id">@Model.FollowUps Takip</a></div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-8" style="min-height: 100px;">
+                                @if(Model.Bio!=null)
+                                {
+                                    <div class="rounded-3 p-1" style="background: rgb(255,0,215);
+                                    background: linear-gradient(90deg, rgba(255,0,215,1) 0%, rgba(204,189,13,1) 50%, rgba(199,0,0,1) 100%);">
+                                        <div class="alert alert-dark p-3 m-0" role="alert" style="background-color: #000;">
+                                            <h6 class="text-white">Bio</h6>
+                                            <p class="fs-6 pb-0 mb-0 text-white">@Model.Bio</p>
+                                        </div>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h5 class="text-dark text-center mt-5">Göderiler</h5>
+        <div class="border-2 border-top border-dark mb-2"></div>
+        <div class="row no-gutters">
+            @if(ViewBag.IPosts.Count == 0)
+            {
+                <div class="alert alert-dark text-center" role="alert">
+                    Henüz gönderi paylaşmadın!
+                </div>
+            }else{
+                @foreach(var post in ViewBag.IPosts)
+                {
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4 p-1 mb-3" style="max-height:350px; min-height:200px;">
+                        <a asp-controller="Home" asp-action="PostDetails" asp-route-postId="@post.Id">
+                            <div style="overflow: hidden; height: 100%;" class=" shadow-lg">
+                                <img src="~/postImages/@post.ImageUrl" alt="" style="height: 100%; width: 100%; object-fit: cover;">
+                            </div>
+                        </a>
+                    </div>
+                }
+            }
+            
+        </div>
+    </div>
+</div>

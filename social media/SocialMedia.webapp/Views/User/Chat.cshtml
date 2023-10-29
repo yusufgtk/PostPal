@@ -1,0 +1,68 @@
+@model List<MessageModel>
+
+@{
+    ViewData["Title"]="Sohbet Odası";
+}
+
+<div class="my-3">
+    <div class="mb-3">
+        <h6 class="text-center text-dark">@ViewBag.ReceiverUser.UserName İle Sohbet Odanız...</h6>
+    </div>
+    <div class="row mx-1">
+        <div class="col-12 mb-1" style="height: 600px;">
+            <div style="height: 100%; overflow-y: auto; background-color: #1A5D1A;" class="p-5  border rounded-3 shadow-lg">
+                @if(Model.Count==0)
+                {
+                    <div class="alert alert-dark text-center text-dark">
+                        @ViewBag.ReceiverUser.UserName kullanıcı ile konuşma başlatın...
+                    </div>
+                }
+                else
+                {
+                    @foreach(var message in Model)
+                    {
+                        @if(message.Who==false)
+                        {
+                            <div class="row mb-3 pe-5 me-5">
+                                <div class="col-2 col-lg-1 col-xl-1 col-md-1 col-sm-1">
+                                    <div style="width: 50px;" class="me-2 float-end">
+                                        <img src="~/userImages/@(ViewBag.ReceiverUser).jpeg" alt="" class="border border-dark rounded-circle " style="width: 100%;">
+                                    </div>
+                                </div>      
+                                <div class="col-10 col-lg-11 col-xl-11 col-md-11 col-sm-11 border border-white rounded-3">
+                                    <p style="color: #FBD85D;">@message.Content</p>
+                                    <small class="text-light">@message.CreatedAt</small>
+                                </div>
+                            </div>
+                        }
+                        else
+                        {
+                            <div class="row mb-3 ps-5 ms-5">
+                                <div class="col-10 col-lg-11 col-xl-11 col-md-11 col-sm-11 border border-white rounded-3 p-2">
+                                    <p class="m-0" style="color: #FBD85D;">@message.Content</p>
+                                    <small class="text-light">@message.CreatedAt</small>
+                                </div>
+                                <div class="col-2 col-lg-1 col-xl-1 col-md-1 col-sm-1">
+                                    <div style="width: 50px;" class="me-2">
+                                        <img src="~/userImages/@(ViewBag.SenderUser).jpeg" alt="" class="border boreder-dark rounded-circle" style="width: 100%;">
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        }
+                        
+                    }
+                }
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="p-3 border rounded-3 shadow-lg" style="background-color: #1A5D1A;">
+                <form asp-controller="User" asp-action="SendMessage" method="post" class="d-flex" role="search">
+                    <input type="hidden" name="receiverUserId" value="@ViewBag.ReceiverUser.Id">
+                    <textarea class="form-control me-2" placeholder="Metin Gir..." name="messageContent" style="max-height: 250px;" maxlength="500" required></textarea>
+                    <button class="btn btn-outline-light" type="submit"><i class="fa-regular fa-paper-plane fa-lg me-2"></i><span>Gönder</span></button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

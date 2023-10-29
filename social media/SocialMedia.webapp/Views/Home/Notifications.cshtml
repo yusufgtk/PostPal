@@ -1,0 +1,94 @@
+@model List<NotificationModel>
+@{
+    ViewData["Title"] ="Bildirimler";
+}
+
+<div class="my-5">
+    <div class="mb-3">
+        <h1 class="text-center text-dark">Bildirimler</h1>
+    </div>
+    <div class="row">
+        <div class="col-12 d-flex justify-content-center mb-3 d-block d-lg-none">
+            <a href="/" class="text-decoration-none btn btn-outline-dark"><i class="fa-solid fa-house"></i><span>Anasayfa</span></a
+        </div>
+    </div>
+    <div>
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center">
+                    <ul class="list-group p-2 p-lg-5 p-xl-5 border border-2 border-dark w-75 w-lg-50 w-xl-50 shadow-lg bg-dark">
+                    @if(Model.Count()>0)
+                    {
+                        @foreach(var n in Model)
+                        {
+                            @if(true)
+                            {
+                                if(n.NotificationType=="Follow")
+                                {
+                                    <li class="list-group-item border border-2 border-dark mb-2 rounded-4" style="background-color: #FFA1F5;">
+                                        <a asp-controller="User" asp-action="Profile" asp-route-userId="@n.UserId2" class="text-decoration-none text-dark">
+                                            <div class="d-flex">
+                                                <div class="d-inline me-2">
+                                                    <img src="~/userImages/@(n.UserName).jpeg" alt="" width="50px" height="50px" class="rounded-circle">
+                                                </div>
+                                                <div  class="d-inline pt-2 me-5">
+                                                    <span>@n.UserName</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="d-flex justify-content-between border-top mt-2">
+                                            <div class="d-inline">
+                                                <p class="mt-2"><span class="me-2">@n.Content</span><i class="fa-solid fa-user-plus"></i></p>
+                                            </div>
+                                            <div class="d-inline">
+                                                <p class="mt-2">@n.CreatedAt</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                }
+                                else{
+                                    <li class="list-group-item border border-2 border-dark mb-2 rounded-4" style="background-color: #FFE4A7;">
+                                        <a asp-controller="User" asp-action="Profile" asp-route-userId="@n.UserId2" class="text-decoration-none text-dark">
+                                            <div class="d-flex">
+                                                <div class="d-inline me-2">
+                                                    <img src="~/userImages/@(n.UserName).jpeg" alt="" width="50px" class="rounded-circle">
+                                                </div>
+                                                <div  class="d-inline pt-2 me-5">
+                                                    <span>@n.UserName</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="d-flex justify-content-between border-top border-dark mt-2">
+                                            <div class="d-inline">
+                                                @if(n.NotificationType=="Like")
+                                                {
+                                                    <p class="mt-2"><span class="me-2">@n.Content</span><i class="fa-solid fa-heart" style="color: #c80404;"></i></p>
+                                                }
+                                                else{
+                                                    <p class="mt-2"><span class="me-2">Gonderine yorum yapıldı : @n.Content</span><i class="fa-solid fa-comment"></i></p>
+                                                }
+                                                
+                                            </div>
+                                            <div class="d-inline">
+                                                <p class="mt-2">@n.CreatedAt</p>
+                                            </div>
+                                        </div>
+                                        <div class="float-end">
+                                            <a asp-controller="Home" asp-action="PostDetails" asp-route-postId="@n.PostId" class="btn btn-sm btn-outline-dark text-decoration-none"><span class="me-2">Gönderiye Git</span><i class="fa-solid fa-angles-right"></i></a>
+                                        </div>
+                                    </li>
+                                }
+                            }
+                        }
+                    }else{
+
+                        <li>
+                            <div class="alert alert-dark" role="alert">
+                                Bildirim yok...
+                            </div>
+                        </li>
+                    }
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

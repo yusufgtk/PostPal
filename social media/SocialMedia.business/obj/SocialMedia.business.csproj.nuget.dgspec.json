@@ -1,0 +1,212 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.business\\SocialMedia.business.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.business\\SocialMedia.business.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.business\\SocialMedia.business.csproj",
+        "projectName": "SocialMedia.business",
+        "projectPath": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.business\\SocialMedia.business.csproj",
+        "packagesPath": "C:\\Users\\yusuf\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.business\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\yusuf\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.data\\SocialMedia.data.csproj": {
+                "projectPath": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.data\\SocialMedia.data.csproj"
+              },
+              "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.entity\\SocialMedia.entity.csproj": {
+                "projectPath": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.entity\\SocialMedia.entity.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.data\\SocialMedia.data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.data\\SocialMedia.data.csproj",
+        "projectName": "SocialMedia.data",
+        "projectPath": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.data\\SocialMedia.data.csproj",
+        "packagesPath": "C:\\Users\\yusuf\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.data\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\yusuf\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.entity\\SocialMedia.entity.csproj": {
+                "projectPath": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.entity\\SocialMedia.entity.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.entity\\SocialMedia.entity.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.entity\\SocialMedia.entity.csproj",
+        "projectName": "SocialMedia.entity",
+        "projectPath": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.entity\\SocialMedia.entity.csproj",
+        "packagesPath": "C:\\Users\\yusuf\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.entity\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\yusuf\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

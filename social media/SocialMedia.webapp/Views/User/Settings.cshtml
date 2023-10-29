@@ -1,0 +1,29 @@
+
+@{
+    ViewData["Title"] = "Ayarlar";
+    var Alert = TempData["Alert"];
+}
+
+<div class="my-5">
+    <div class="mb-5">
+        <h3 class="text-center text-dark">Hesap Ayarları</h3>
+    </div>
+    <div>
+        @if(TempData["Message"]!=null)
+        {
+            <div class="alert @Alert" role="alert">
+                @TempData["Message"]
+            </div>
+        }
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center">
+                <ul class="list-group bg-dark p-3 p-xl-5 p-lg-5 w-75 w-xl-50 w-lg-75">
+                    <h5 class="text-center text-white mb-5">@ViewBag.UserName</h5>
+                    <a asp-controller="User" asp-action="EditProfile" class="list-group-item mb-2 text-dark text-decoration-none"><span class="me-3">Profili düzenle</span><i class="fa-solid fa-right-long fa-lg"></i></a>
+                    <a asp-controller="User" asp-action="ResetPassword" class="list-group-item text-dark text-decoration-none mb-2"><span class="me-3">Şifreyi yenile</span><i class="fa-solid fa-right-long fa-lg"></i></a>
+                    <a asp-controller="User" asp-action="BlueTick" class="list-group-item text-dark text-decoration-none mb-2"><span class="me-3">Mavi Tik Başvurusu</span><i class="fa-solid fa-right-long fa-lg"></i></a>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

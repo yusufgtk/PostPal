@@ -1,0 +1,44 @@
+@{
+    ViewData["Title"] = "Geri Bildirim";
+    var Alert=TempData["Alert"];
+}
+
+<div class="my-5 container">
+    <div>
+        <div class="row">
+            @if(TempData["Message"]!=null)
+            {
+                <div class="col-lg-12 col-md-9 col-sm-6 d-flex justify-content-center">
+                    <div class="alert @Alert">
+                        @TempData["Message"]
+                    </div>
+                </div>
+            }
+            
+            <div class="col-lg-12 col-md-9 col-sm-6 d-flex justify-content-center">
+                <form asp-controller="Home" asp-action="Feedback" method="post" enctype="multipart/form-data">
+                    <div class="card text-bg-dark mb-3" style="max-width: 30rem;">
+                        <div class="card-header text-center text-dark"><i class="fa-solid fa-hand-holding-medical fa-lg me-2"></i><span>Geri Bildirim</span></div>
+                        <div class="card-body">
+                            
+                            <div class="input-group mb-3">
+                                <input type="file" class="form-control" name="file">
+                                <label class="input-group-text" for="inputGroupFile02">Resim Yükle</label>
+                            </div>
+                            <div class="alert alert-warning text-center mb-4 mt-1 p-1">
+                                Resim ile destekleyebilirsiniz.
+                            </div>
+                            <div class="mb-3">
+                                <label for="content" class="form-label">Açıklama</label>
+                                <textarea class="form-control" style="min-height: 200px; max-height: 300px;" name="content" maxlength="500" min="10"></textarea>
+                            </div>
+                            <div>
+                                <button class="btn btn-outline-dark"><span class="me-2">Gönder</span><i class="fa-regular fa-paper-plane fa-beat fa-lg"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

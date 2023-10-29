@@ -1,0 +1,82 @@
+
+<div class="d-flex flex-column flex-shrink-0 p-3 bg-body-tertiary border border-dark border-end-3" style="width: 280px; height: 100vh">
+    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none text-dark">
+        @* <span  class="fs-4">Social Media</span> *@
+        <div>
+            <img src="~/icons/logo-white.jpeg" alt="" style="width: 220px;">
+        </div>
+    </a>
+    <hr class="text-dark">
+    <ul class="nav nav-pills flex-column mb-auto">
+        <li class="nav-item">
+            <a href="/" class="nav-link text-dark" aria-current="page">
+                <i class="fa-solid fa-house-chimney fa-xl"></i>
+                <span class="ms-3">Anasayfa</span>
+            </a>
+        </li>
+        <li>
+            <a asp-controller="Home" asp-action="Discover" class="nav-link link-body-emphasis text-dark">
+                <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+                <span class="ms-3">Ara</span>
+            </a>
+        </li>
+        <li>
+            <a asp-controller="Home" asp-action="Discover" class="nav-link link-body-emphasis text-dark">
+                <i class="fa-regular fa-compass fa-xl"></i>
+                <span class="ms-3">Keşfet</span>
+            </a>
+        </li>
+        <li>
+            <a asp-controller="Home" asp-action="Notifications" class="nav-link link-body-emphasis text-dark">
+                <i class="fa-regular fa-bell fa-xl"></i>
+                <span class="ms-3">Bildirimler</span>
+            </a>
+        </li>
+        <li>
+            <a asp-controller="User" asp-action="ChatList" class="nav-link link-body-emphasis text-dark">
+                <i class="fa-regular fa-comments fa-xl"></i>
+                <span class="ms-3">Mesajlar</span>
+            </a>
+        </li>
+        <li>
+            <a asp-controller="User" asp-action="AddPost" class="nav-link link-body-emphasis text-dark">
+                <i class="fa-regular fa-square-plus fa-xl"></i>
+                <span class="ms-3">Oluştur</span>
+            </a>
+        </li>
+        <li>
+            <a asp-controller="User" asp-action="Saves" class="nav-link link-body-emphasis text-dark">
+                <i class="fa-regular fa-bookmark fa-xl"></i>
+                <span class="ms-3">Kaydedilenler</span>
+            </a>
+        </li>
+        <li>
+            @if(User.Identity.IsAuthenticated)
+            {
+                <a asp-controller="User" asp-action="IProfile" class="nav-link link-body-emphasis text-dark">
+                    <img src="~/userImages/@(User.Identity.Name).jpeg" alt="" width="45px" height="45px" class="border border-dark rounded-circle">
+                    <span class="ms-3">@(User.Identity.Name)</span>
+                </a>
+            }
+            else
+            {
+                <a href="#" class="nav-link link-body-emphasis text-dark">
+                    <i class="fa-regular fa-user fa-xl"></i>
+                    <span class="ms-3">Profil</span>
+                </a>
+            }
+        </li>
+        <li>
+            <a asp-controller="Home" asp-action="Feedback" class="nav-link link-body-emphasis text-dark">
+                <i class="fa-solid fa-hand-holding-medical fa-xl"></i>
+                <span class="ms-3">Geri Bildirim</span>
+            </a>
+        </li>
+        <li>
+            <a asp-controller="Account" asp-action="Logout" class="nav-link link-body-emphasis text-dark">
+                <i class="fa-solid fa-right-from-bracket fa-xl"></i>
+                <span class="ms-3">Çıkış Yap</span>
+            </a>
+        </li>
+    </ul>
+</div>

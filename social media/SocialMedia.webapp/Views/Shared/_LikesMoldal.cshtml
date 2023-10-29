@@ -1,0 +1,49 @@
+
+<div class="modal-dialog  modal-dialog-scrollable">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Beğenenler</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="row">
+                <div class="col-12">
+                    <ul class="list-group">
+                        @if(ViewBag.Likes.Count()>0)
+                        {
+                            @foreach(var like in ViewBag.Likes)
+                            {
+                                <li class="list-group-item">
+                                    <a asp-controller="User" asp-action="Profile" asp-route-userId="@like.UserId">
+                                        <div class="d-flex">
+                                            <div class="d-inline">
+                                                <img src="~/userImage/@(like.UserName).jpeg" alt="" width="30px" class="rounded-circle">
+                                            </div>
+                                            <div class="d-inlne">
+                                                <span>@like.UserName</span>
+                                            </div>
+                                        </div>
+                                        
+                                    </a>
+                                </li>
+                            }
+                        }else{
+                            @for(int i=0; i<50; i++)
+                            {
+                                <li>
+                                <div class="alert alert-dark" role="alert">
+                                    Beğeni yok ilk sen beğen!
+                                </div>
+                            </li>
+                            }
+                            
+                        }
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Kapat</button>
+        </div>
+    </div>
+</div>

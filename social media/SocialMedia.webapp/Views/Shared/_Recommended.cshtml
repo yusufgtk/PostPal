@@ -1,0 +1,35 @@
+
+<div class="my-3">
+    <div class="mb-3">
+        <h4 class="text-dark">Popüler Hesaplar</h4>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <ul class="list-group">
+                @foreach(var user in ViewBag.DiscoverUsers)
+                {
+                    <li class="list-group-item p-1 border-0">
+                        <div class="card p-1 border border-dark">
+                            <div class="row" >
+                                <div class="col-2">
+                                    <a asp-controller="User" asp-action="Profile" asp-route-userId="@user.Id">
+                                        <img src="~/userImages/@(user.UserName).jpeg" alt="" class="rounded-circle border border-1 border-dark" width="50px" height="50px">
+                                    </a>
+                                </div>
+                                <div class="col-10 d-flex align-items-center">
+                                    <div class="ms-2">
+                                        <a asp-controller="User" asp-action="Profile" asp-route-userId="@user.Id" class="text-dark text-decoration-none">@user.UserName</a>
+                                        @if(user.IsApproved==true)
+                                        {
+                                            <span><img src="~/icons/mavi-tik1.png" alt="" width="20px" class="rounded-circle"></span>
+                                        }
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                }
+            </ul>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,17 @@
+c:\Users\yusuf\OneDrive\Masaüstü\social media\SocialMedia.data\bin\Debug\net6.0\SocialMedia.data.deps.json
+C:\Users\yusuf\OneDrive\Masaüstü\social media\SocialMedia.data\bin\Debug\net6.0\SocialMedia.data.dll
+C:\Users\yusuf\OneDrive\Masaüstü\social media\SocialMedia.data\bin\Debug\net6.0\SocialMedia.data.pdb
+C:\Users\yusuf\OneDrive\Masaüstü\social media\SocialMedia.data\bin\Debug\net6.0\SocialMedia.entity.dll
+C:\Users\yusuf\OneDrive\Masaüstü\social media\SocialMedia.data\bin\Debug\net6.0\SocialMedia.entity.pdb
+C:\Users\yusuf\OneDrive\Masaüstü\social media\SocialMedia.data\obj\Debug\net6.0\SocialMedia.data.csproj.AssemblyReference.cache
+C:\Users\yusuf\OneDrive\Masaüstü\social media\SocialMedia.data\obj\Debug\net6.0\SocialMedia.data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\yusuf\OneDrive\Masaüstü\social media\SocialMedia.data\obj\Debug\net6.0\SocialMedia.data.AssemblyInfoInputs.cache
+C:\Users\yusuf\OneDrive\Masaüstü\social media\SocialMedia.data\obj\Debug\net6.0\SocialMedia.data.AssemblyInfo.cs
+C:\Users\yusuf\OneDrive\Masaüstü\social media\SocialMedia.data\obj\Debug\net6.0\SocialMedia.data.csproj.CoreCompileInputs.cache
+c:\Users\yusuf\OneDrive\Masaüstü\social media\SocialMedia.data\obj\Debug\net6.0\SocialMedia.data.csproj.CopyComplete
+C:\Users\yusuf\OneDrive\Masaüstü\social media\SocialMedia.data\obj\Debug\net6.0\SocialMedia.data.dll
+C:\Users\yusuf\OneDrive\Masaüstü\social media\SocialMedia.data\obj\Debug\net6.0\refint\SocialMedia.data.dll
+C:\Users\yusuf\OneDrive\Masaüstü\social media\SocialMedia.data\obj\Debug\net6.0\SocialMedia.data.pdb
+c:\Users\yusuf\OneDrive\Masaüstü\social media\SocialMedia.data\obj\Debug\net6.0\ref\SocialMedia.data.dll
+C:\Users\yusuf\OneDrive\Masaüstü\social media\SocialMedia.data\bin\Debug\net6.0\SocialMedia.data.runtimeconfig.json
+C:\Users\yusuf\OneDrive\Masaüstü\social media\SocialMedia.data\obj\Debug\net6.0\SocialMedia.data.genruntimeconfig.cache

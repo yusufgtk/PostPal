@@ -1,0 +1,96 @@
+@model List<UserModel>
+
+@{
+    Layout="_Layout3";
+    ViewData["title"]="Kullanıcılar";
+}
+
+<div class="my-5">
+    <div class="mb-5">
+        <h2 class="h2 text-center text-dark">Kullanıcılar</h2>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            @if(TempData["Message"]!=null)
+            {
+                <div class="alert alert-danger" role="alert">
+                    @TempData["Message"]
+                </div>
+            }
+        </div>
+        <div class="col-12 mb-5">
+            <form asp-controller="Admin" asp-action="UserList" class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Kullanıcı ara..." aria-label="Search" name="search" class="border border-2 boder-dark">
+                <button class="btn btn-outline-primary" type="submit"><i class="fa-solid fa-magnifying-glass fa-lg"></i></button>
+            </form>
+        </div>
+        @if(Model.Count>0)
+        {
+            <div class="col-12">
+                <table class="table table-primary table-striped border border-1 border-dark">
+                    <thead>
+                        <tr>
+                            <th scope="col"
+                            style="width: 150px;">Profil Resmi</th>
+                            <th scope="col" style="width: 200px;">Kullanıcı Adı</th>
+                            <th scope="col"style="width: 50px;">Onaylı mı?</th>
+                            <th scope="col"style="width: 50px;">Onayı Kaldır</th>
+                            <th scope="col"style="width: 50px;">Hesabı Sil</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach(var user in Model)
+                        {
+                            <tr>
+                                <th scope="row"> 
+                                    <img src="~/userImages/@(user.UserName).jpeg" alt="" width="150px" height="150px" class="rounded-circle border border-1 border-dark">
+                                </th>
+                                <td>
+                                    <span class="ms-2">@user.UserName</span>
+                                </td>
+                                @if(user.IsApproved)
+                                {
+                                    <td><i class="fa-solid fa-check fa-lg text-primary"></i></td>
+                                }
+                                else{
+                                    <td><i class="fa-solid fa-xmark fa-lg text-danger"></i></td>
+                                }
+                                <td>
+                                    @if(user.IsApproved)
+                                    {
+                                        <form asp-controller="Admin" asp-action="DeleteApproved" method="post">
+                                            <input type="hidden" name="userName" value="@user.UserName">
+                                            <button class="btn btn-warning">Onayı Kaldır</button>
+                                        </form>
+                                    }
+                                    
+                                </td>
+                                <td>
+                                    <form asp-controller="Admin" asp-action="DeleteUser" method="post">
+                                        <input type="hidden" name="userName" value="@user.UserName">
+                                        <button class="btn btn-danger">
+                                            @if(user.IsActive)
+                                            {
+                                                <span>Banla</span>
+                                            }
+                                            else
+                                            {
+                                                <span>Banı Kaldır</span>
+                                            }
+                                        </button>
+                                    </form>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        }else{
+            <div class="col-12 d-flex justify-content-center">
+                <div class="alert alert-primary" role="alert">
+                    Şuan da kullanıcı bulunmamaktadır.
+                </div>
+            </div>
+        }
+    </div>
+</div>

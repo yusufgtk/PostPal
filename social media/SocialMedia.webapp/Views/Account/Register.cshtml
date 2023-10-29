@@ -1,0 +1,55 @@
+@model RegisterModel
+
+@{
+    ViewData["Title"] = "Kayıt Ol";
+    var Alert = TempData["Alert"];
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+
+<div class="my-5">
+    @if(TempData["Message"] != null)
+    {
+        <div class="alert @Alert mb-3" role="alert">
+            @TempData["Message"]
+        </div>
+    }
+    <div class="row">
+        <div class="col-12 d-flex justify-content-center">
+            <h1 class="text-center text-dark mb-5">Social Media</h1>
+        </div>
+        <div class="col-12 d-flex justify-content-center">
+            <div class="card text-bg-dark mb-3" style="max-width: 30rem;">
+                <div class="card-header text-center">Kayıt Ol</div>
+                <div class="card-body">
+                    <form asp-controller="Account" asp-action="Register" method="post" enctype="multipart/form-data">
+                        <div class="input-group mb-3">
+                            <input type="file" name="file" class="form-control" id="inputGroupFile02" required accept=".jpeg">
+                            <label class="input-group-text" for="inputGroupFile02">Profil Resmi Yükle</label>
+                        </div>
+                        <div class="mb-3">
+                            <label asp-for="UserName" class="form-label">Kullanıcı Adı</label>
+                            <input class="form-control" asp-for="UserName">
+                            <span asp-validation-for="UserName" class="text-warning"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label asp-for="Email" class="form-label">Email</label>
+                            <input class="form-control" asp-for="Email">
+                            <span asp-validation-for="Email" class="text-warning"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label asp-for="Password" class="form-label">Şifre</label>
+                            <input class="form-control" asp-for="Password">
+                            <span asp-validation-for="Password" class="text-warning"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label asp-for="RePassword" class="form-label">Şifre Tekrar</label>
+                            <input class="form-control" asp-for="RePassword">
+                            <span asp-validation-for="RePassword" class="text-warning"></span>
+                        </div>
+                        <button class="btn btn-outline-dark" type="submit">Tamamla</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

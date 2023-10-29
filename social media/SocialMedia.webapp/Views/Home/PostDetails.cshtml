@@ -1,0 +1,13 @@
+@model PostModel
+
+@{
+    ViewData["Title"] ="Post Detayı";
+}
+
+<div class="my-5">
+    <div class="row">
+        <div class="col-12 mb-4 d-flex justify-content-center" style="max-width: 30rem; margin: 0 auto;">
+            <partial name="_PostCard" model="@Model"></partial>
+        </div>
+    </div>
+</div>

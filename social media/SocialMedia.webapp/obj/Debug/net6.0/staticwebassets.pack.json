@@ -1,0 +1,509 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\SocialMedia.webapp.bundle.scp.css",
+      "PackagePath": "staticwebassets\\SocialMedia.webapp.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\adminImages\\admin.png",
+      "PackagePath": "staticwebassets\\adminImages\\admin.png"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\errorImages\\Error.jpg",
+      "PackagePath": "staticwebassets\\errorImages\\Error.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\feedbackImages\\04002a14-036f-4bbe-a345-f768458c103e.jpeg",
+      "PackagePath": "staticwebassets\\feedbackImages\\04002a14-036f-4bbe-a345-f768458c103e.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\feedbackImages\\2b3a2552-c631-410b-bb61-e35f2c76e43f.jpeg",
+      "PackagePath": "staticwebassets\\feedbackImages\\2b3a2552-c631-410b-bb61-e35f2c76e43f.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\feedbackImages\\ac0c495c-65ab-42af-9882-5c87a7d26bca.jpeg",
+      "PackagePath": "staticwebassets\\feedbackImages\\ac0c495c-65ab-42af-9882-5c87a7d26bca.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\icons\\brand.png",
+      "PackagePath": "staticwebassets\\icons\\brand.png"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\icons\\logo-dark-xl.jpeg",
+      "PackagePath": "staticwebassets\\icons\\logo-dark-xl.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\icons\\logo-dark.jpeg",
+      "PackagePath": "staticwebassets\\icons\\logo-dark.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\icons\\logo-white.jpeg",
+      "PackagePath": "staticwebassets\\icons\\logo-white.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\icons\\mavi-tik.png",
+      "PackagePath": "staticwebassets\\icons\\mavi-tik.png"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\icons\\mavi-tik1.png",
+      "PackagePath": "staticwebassets\\icons\\mavi-tik1.png"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\postImages\\0cf6d4fe-d27d-4590-96f3-60355f4ae686.jpeg",
+      "PackagePath": "staticwebassets\\postImages\\0cf6d4fe-d27d-4590-96f3-60355f4ae686.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\postImages\\135a1aa4-a4c1-4450-ac27-42d1887ccafd.jpeg",
+      "PackagePath": "staticwebassets\\postImages\\135a1aa4-a4c1-4450-ac27-42d1887ccafd.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\postImages\\24c591d2-b81f-44b3-bfab-4ba6fb50c689.jpeg",
+      "PackagePath": "staticwebassets\\postImages\\24c591d2-b81f-44b3-bfab-4ba6fb50c689.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\postImages\\33366d45-885b-4141-bc84-1b820b6b6ca6.jpeg",
+      "PackagePath": "staticwebassets\\postImages\\33366d45-885b-4141-bc84-1b820b6b6ca6.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\postImages\\33d8b5c1-002d-4784-89b8-f5a9992b790a.jpeg",
+      "PackagePath": "staticwebassets\\postImages\\33d8b5c1-002d-4784-89b8-f5a9992b790a.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\postImages\\34885e93-d1d1-478b-a79c-9844fd064948.jpeg",
+      "PackagePath": "staticwebassets\\postImages\\34885e93-d1d1-478b-a79c-9844fd064948.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\postImages\\34a5a580-3c35-4e42-b11c-c17d14fe7ea7.jpeg",
+      "PackagePath": "staticwebassets\\postImages\\34a5a580-3c35-4e42-b11c-c17d14fe7ea7.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\postImages\\3e532857-9acc-4061-8b2a-d656cc6b200f.jpeg",
+      "PackagePath": "staticwebassets\\postImages\\3e532857-9acc-4061-8b2a-d656cc6b200f.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\postImages\\4e10cbe8-51ae-4efb-bde9-b5235eca567a.jpeg",
+      "PackagePath": "staticwebassets\\postImages\\4e10cbe8-51ae-4efb-bde9-b5235eca567a.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\postImages\\576efae0-51bb-461a-a7aa-059cc49bceaf.jpeg",
+      "PackagePath": "staticwebassets\\postImages\\576efae0-51bb-461a-a7aa-059cc49bceaf.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\postImages\\639eeff7-74f6-4132-81ba-8f65f2ce8cc5.jpeg",
+      "PackagePath": "staticwebassets\\postImages\\639eeff7-74f6-4132-81ba-8f65f2ce8cc5.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\postImages\\70219dbe-7555-4e17-be60-5e6a92574610.jpeg",
+      "PackagePath": "staticwebassets\\postImages\\70219dbe-7555-4e17-be60-5e6a92574610.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\postImages\\75d33dcd-e0d0-494c-bfa8-76b8f1e96234.jpeg",
+      "PackagePath": "staticwebassets\\postImages\\75d33dcd-e0d0-494c-bfa8-76b8f1e96234.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\postImages\\8a152f3b-2890-4ff7-82c3-943114fe4a03.jpeg",
+      "PackagePath": "staticwebassets\\postImages\\8a152f3b-2890-4ff7-82c3-943114fe4a03.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\postImages\\8d681a9f-a858-40f8-94c1-d958dc28c4c4.jpeg",
+      "PackagePath": "staticwebassets\\postImages\\8d681a9f-a858-40f8-94c1-d958dc28c4c4.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\postImages\\8f4b2464-54e9-41a8-bd31-e024acbfcc25.jpeg",
+      "PackagePath": "staticwebassets\\postImages\\8f4b2464-54e9-41a8-bd31-e024acbfcc25.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\postImages\\a9559e20-d329-4b0a-a7c8-d922c636f7d4.jpeg",
+      "PackagePath": "staticwebassets\\postImages\\a9559e20-d329-4b0a-a7c8-d922c636f7d4.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\postImages\\b90695d9-bf19-462e-b70e-153f41fbb125.jpeg",
+      "PackagePath": "staticwebassets\\postImages\\b90695d9-bf19-462e-b70e-153f41fbb125.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\postImages\\bbbd6e3b-6c1a-4917-bddb-161446f0b098.jpeg",
+      "PackagePath": "staticwebassets\\postImages\\bbbd6e3b-6c1a-4917-bddb-161446f0b098.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\postImages\\c81a8632-665e-4231-a180-a0e9f374ae27.jpeg",
+      "PackagePath": "staticwebassets\\postImages\\c81a8632-665e-4231-a180-a0e9f374ae27.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\postImages\\cc4d7c83-3abd-4323-976e-a0453778c3a8.jpeg",
+      "PackagePath": "staticwebassets\\postImages\\cc4d7c83-3abd-4323-976e-a0453778c3a8.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\postImages\\d8649452-55f5-4273-8925-b9acb91066e5.jpeg",
+      "PackagePath": "staticwebassets\\postImages\\d8649452-55f5-4273-8925-b9acb91066e5.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\postImages\\daba680d-d6e3-4075-b86f-1a4052e9e14d.jpeg",
+      "PackagePath": "staticwebassets\\postImages\\daba680d-d6e3-4075-b86f-1a4052e9e14d.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\postImages\\dbd3c626-da8d-4b20-aaaf-31f04ee5cefb.jpeg",
+      "PackagePath": "staticwebassets\\postImages\\dbd3c626-da8d-4b20-aaaf-31f04ee5cefb.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\postImages\\e63823e4-5ddd-48c6-bfba-0d9c5d9f655b.jpeg",
+      "PackagePath": "staticwebassets\\postImages\\e63823e4-5ddd-48c6-bfba-0d9c5d9f655b.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\postImages\\eb12cc30-807f-4c7a-921d-b72ec7c1840b.jpeg",
+      "PackagePath": "staticwebassets\\postImages\\eb12cc30-807f-4c7a-921d-b72ec7c1840b.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\postImages\\ee827b58-f0bb-4fb5-93f1-51ca093f40e1.jpeg",
+      "PackagePath": "staticwebassets\\postImages\\ee827b58-f0bb-4fb5-93f1-51ca093f40e1.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\postImages\\post-demo.jpg",
+      "PackagePath": "staticwebassets\\postImages\\post-demo.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\storyImages\\23088d35-e6f6-4bd8-b0f2-8224670f79b7.jpeg",
+      "PackagePath": "staticwebassets\\storyImages\\23088d35-e6f6-4bd8-b0f2-8224670f79b7.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\storyImages\\2f5209ed-6a09-4815-9460-e72f1fef631b.jpeg",
+      "PackagePath": "staticwebassets\\storyImages\\2f5209ed-6a09-4815-9460-e72f1fef631b.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\storyImages\\33fd5c88-1500-47aa-9ff9-9eb59125f3c7.jpeg",
+      "PackagePath": "staticwebassets\\storyImages\\33fd5c88-1500-47aa-9ff9-9eb59125f3c7.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\storyImages\\372c2055-8cae-4395-8009-5af3e97d57be.jpeg",
+      "PackagePath": "staticwebassets\\storyImages\\372c2055-8cae-4395-8009-5af3e97d57be.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\storyImages\\47abac7b-b7d5-44a6-a471-ac40880877d9.jpeg",
+      "PackagePath": "staticwebassets\\storyImages\\47abac7b-b7d5-44a6-a471-ac40880877d9.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\storyImages\\67b175af-d6b5-4b17-a36a-7989286c55d6.jpeg",
+      "PackagePath": "staticwebassets\\storyImages\\67b175af-d6b5-4b17-a36a-7989286c55d6.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\storyImages\\6eecc7e2-ded3-42f4-a871-9fb6b77cc637.jpeg",
+      "PackagePath": "staticwebassets\\storyImages\\6eecc7e2-ded3-42f4-a871-9fb6b77cc637.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\storyImages\\718577f6-7d7e-4a36-bbb1-97128ad854f2.jpeg",
+      "PackagePath": "staticwebassets\\storyImages\\718577f6-7d7e-4a36-bbb1-97128ad854f2.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\storyImages\\9b9ff139-8e4d-4266-a35d-e2f39202af96.jpeg",
+      "PackagePath": "staticwebassets\\storyImages\\9b9ff139-8e4d-4266-a35d-e2f39202af96.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\storyImages\\a9c4c250-d5aa-4100-9de0-a9cf2a68443b.jpeg",
+      "PackagePath": "staticwebassets\\storyImages\\a9c4c250-d5aa-4100-9de0-a9cf2a68443b.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\storyImages\\c6522be3-0130-4c46-87bf-76465fd3c0e4.jpeg",
+      "PackagePath": "staticwebassets\\storyImages\\c6522be3-0130-4c46-87bf-76465fd3c0e4.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\storyImages\\c6942494-aeed-4e4b-a0d4-85ae5fced854.jpeg",
+      "PackagePath": "staticwebassets\\storyImages\\c6942494-aeed-4e4b-a0d4-85ae5fced854.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\storyImages\\c8ee84aa-bb60-42f5-8da1-4916d27623ce.jpeg",
+      "PackagePath": "staticwebassets\\storyImages\\c8ee84aa-bb60-42f5-8da1-4916d27623ce.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\storyImages\\cf6e1988-eb4d-4e31-9e5b-c4ecfe250dce.jpeg",
+      "PackagePath": "staticwebassets\\storyImages\\cf6e1988-eb4d-4e31-9e5b-c4ecfe250dce.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\storyImages\\e5bcc92f-3013-4efe-9c34-0aa0cc6b9256.jpeg",
+      "PackagePath": "staticwebassets\\storyImages\\e5bcc92f-3013-4efe-9c34-0aa0cc6b9256.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\storyImages\\story-demo.jpeg",
+      "PackagePath": "staticwebassets\\storyImages\\story-demo.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\userImages\\ahmet.jpeg",
+      "PackagePath": "staticwebassets\\userImages\\ahmet.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\userImages\\beratgtk.jpeg",
+      "PackagePath": "staticwebassets\\userImages\\beratgtk.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\userImages\\emirgtk.jpeg",
+      "PackagePath": "staticwebassets\\userImages\\emirgtk.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\userImages\\postpal.jpeg",
+      "PackagePath": "staticwebassets\\userImages\\postpal.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\userImages\\sudenur.jpeg",
+      "PackagePath": "staticwebassets\\userImages\\sudenur.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\OneDrive\\Masaüstü\\social media\\SocialMedia.webapp\\wwwroot\\userImages\\yusufgtk.jpeg",
+      "PackagePath": "staticwebassets\\userImages\\yusufgtk.jpeg"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.SocialMedia.webapp.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.SocialMedia.webapp.props",
+      "PackagePath": "build\\SocialMedia.webapp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.SocialMedia.webapp.props",
+      "PackagePath": "buildMultiTargeting\\SocialMedia.webapp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.SocialMedia.webapp.props",
+      "PackagePath": "buildTransitive\\SocialMedia.webapp.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
